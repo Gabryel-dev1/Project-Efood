@@ -15,18 +15,28 @@ export const ItalianBanner = styled.div<Props>`
   background-size: cover;
   background-position: center;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
   @media (max-width: ${breakpoints.desktop}) {
     padding: 24px;
-    font-size: 1.8rem;
   }
 
   @media (max-width: ${breakpoints.tablet}) {
     height: 200px;
-    font-size: 1.5rem;
-    padding: 16px;
+    padding: 20px;
   }
 
-  div {
+  .container {
+    position: relative; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -34,16 +44,17 @@ export const ItalianBanner = styled.div<Props>`
     text-align: start;
     height: 100%;
     color: ${cores.branco};
+    z-index: 1; 
   }
 
   span {
     font-weight: 100;
     margin-top: 24px;
-    font-size: 1.8rem;
+    font-size: 32px;
   }
 
   h1 {
     margin-bottom: 32px;
-    font-size: 2.5rem; 
+    font-size: 32px; 
   }
 `;
