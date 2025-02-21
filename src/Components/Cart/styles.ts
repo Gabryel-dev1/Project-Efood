@@ -33,8 +33,14 @@ export const Aside = styled.aside`
   max-width: 360px;
   padding: 32px 8px;
   width: 100%;
+  height: 100vh;
   z-index: 1;
   background-color: ${cores.vermelho};
+
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin; /* Para navegadores que suportam */
+  scrollbar-color: ${cores.bege} ${cores.vermelho}; /* Cor da barra e do fundo */
 
   .message-cart-div {
     height: 100%;

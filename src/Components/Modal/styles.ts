@@ -76,6 +76,7 @@ export const ModalContent = styled.div`
 
     @media (max-width: ${breakpoints.tablet}) {
       margin-top: 40px;
+      height: 200px;
     }
   }
 
