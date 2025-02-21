@@ -67,8 +67,7 @@ export const Button = styled(Link)`
   width: 96px;
   height: 32px;
   border-radius: 10px;
-  margin-left: 8px;
-  margin-top: 8px;
+  margin: 2px 8px;
   color: ${cores.branco};
   background-color: ${cores.vermelho};
 `;
